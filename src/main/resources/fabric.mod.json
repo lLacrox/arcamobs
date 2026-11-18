@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "arcamobs",
+	"version": "${version}",
+	"name": "ArcaMobs",
+	"description": "New mobs added to Minecraft for the Arcamere project!",
+	"authors": [
+		"Lacrox"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/arcamobs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lacrox.arcamobs.ArcaMobs"
+		],
+		"fabric-datagen": [
+			"net.lacrox.arcamobs.ArcaMobsDataGenerator"
+		],
+		"client": [
+			"net.lacrox.arcamobs.ArcaMobsClient"
+		]
+	},
+	"mixins": [
+		"arcamobs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
