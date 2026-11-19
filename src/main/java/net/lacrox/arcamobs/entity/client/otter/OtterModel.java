@@ -1,4 +1,4 @@
-package net.lacrox.arcamobs.entity.client;
+package net.lacrox.arcamobs.entity.client.otter;
 
 import net.lacrox.arcamobs.ArcaMobs;
 import net.lacrox.arcamobs.entity.custom.OtterEntity;

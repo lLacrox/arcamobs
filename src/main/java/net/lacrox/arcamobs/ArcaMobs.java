@@ -17,9 +17,12 @@ public class ArcaMobs implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		//Mob Register
 		ModEntities.registerModEntities();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.OTTER, OtterEntity.createAttributes());
+
 		FabricDefaultAttributeRegistry.register(ModEntities.DESERTRAINFROG, DesertRainFrogEntity.createAttributes());
 	}
 

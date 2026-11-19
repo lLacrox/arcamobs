@@ -1,4 +1,4 @@
-package net.lacrox.arcamobs.entity.client;
+package net.lacrox.arcamobs.entity.client.desert_rain_frog;
 
 import net.lacrox.arcamobs.ArcaMobs;
 import net.lacrox.arcamobs.entity.custom.DesertRainFrogEntity;

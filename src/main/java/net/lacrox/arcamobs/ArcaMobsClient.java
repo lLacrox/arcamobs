@@ -4,10 +4,10 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.lacrox.arcamobs.entity.ModEntities;
-import net.lacrox.arcamobs.entity.client.DesertRainFrogModel;
-import net.lacrox.arcamobs.entity.client.DesertRainFrogRenderer;
-import net.lacrox.arcamobs.entity.client.OtterModel;
-import net.lacrox.arcamobs.entity.client.OtterRenderer;
+import net.lacrox.arcamobs.entity.client.desert_rain_frog.DesertRainFrogModel;
+import net.lacrox.arcamobs.entity.client.desert_rain_frog.DesertRainFrogRenderer;
+import net.lacrox.arcamobs.entity.client.otter.OtterModel;
+import net.lacrox.arcamobs.entity.client.otter.OtterRenderer;
 
 public class ArcaMobsClient implements ClientModInitializer {
     @Override
