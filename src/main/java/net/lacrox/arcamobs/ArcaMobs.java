@@ -2,6 +2,9 @@ package net.lacrox.arcamobs;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.lacrox.arcamobs.entity.ModEntities;
+import net.lacrox.arcamobs.entity.custom.OtterEntity;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -13,7 +16,9 @@ public class ArcaMobs implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModEntities.registerModEntities();
 
+		FabricDefaultAttributeRegistry.register(ModEntities.OTTER, OtterEntity.createAttributes());
 	}
 
 	public static Identifier id(String path) {

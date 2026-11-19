@@ -1,0 +1,21 @@
+package net.lacrox.arcamobs.entity;
+
+import net.lacrox.arcamobs.ArcaMobs;
+import net.lacrox.arcamobs.entity.custom.OtterEntity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SpawnGroup;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+
+public class ModEntities {
+    public static final EntityType<OtterEntity> OTTER = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(ArcaMobs.MOD_ID, "otter"),
+            EntityType.Builder.create(OtterEntity::new, SpawnGroup.CREATURE)
+                    .dimensions(0.8f, 0.65f).build());
+
+
+    public static void registerModEntities() {
+        ArcaMobs.LOGGER.info("Spawning Wildlife");
+    }
+}
