@@ -1,6 +1,7 @@
 package net.lacrox.arcamobs.entity;
 
 import net.lacrox.arcamobs.ArcaMobs;
+import net.lacrox.arcamobs.entity.custom.DesertRainFrogEntity;
 import net.lacrox.arcamobs.entity.custom.OtterEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -14,6 +15,10 @@ public class ModEntities {
             EntityType.Builder.create(OtterEntity::new, SpawnGroup.CREATURE)
                     .dimensions(0.8f, 0.65f).build());
 
+    public static final EntityType<DesertRainFrogEntity> DESERTRAINFROG = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(ArcaMobs.MOD_ID, "desertrainfrog"),
+            EntityType.Builder.create(DesertRainFrogEntity::new, SpawnGroup.CREATURE)
+                    .dimensions(0.45f, 0.45f).build());
 
     public static void registerModEntities() {
         ArcaMobs.LOGGER.info("Spawning Wildlife");

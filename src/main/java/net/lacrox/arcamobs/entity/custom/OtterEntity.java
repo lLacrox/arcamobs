@@ -2,7 +2,6 @@ package net.lacrox.arcamobs.entity.custom;
 
 import net.lacrox.arcamobs.entity.ModEntities;
 import net.minecraft.entity.AnimationState;
-import net.minecraft.entity.EntityAttachments;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;

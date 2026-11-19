@@ -55,7 +55,7 @@ public class OtterModel<T extends OtterEntity> extends SinglePartEntityModel<T> 
         this.getPart().traverse().forEach(ModelPart::resetTransform);
         this.setHeadAngles(netHeadYaw, headPitch);
 
-        this.animateMovement(OtterAnimations.ANIM_OTTER_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
+        this.animateMovement(OtterAnimations.ANIM_OTTER_WALK, limbSwing, limbSwingAmount, 3f, 3f);
         this.updateAnimation(entity.idleAnimationState, OtterAnimations.ANIM_OTTER_IDLE, ageInTicks, 1f);
     }
 
