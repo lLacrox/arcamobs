@@ -4,6 +4,8 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.lacrox.arcamobs.entity.ModEntities;
+import net.lacrox.arcamobs.entity.client.boar.BoarModel;
+import net.lacrox.arcamobs.entity.client.boar.BoarRenderer;
 import net.lacrox.arcamobs.entity.client.desert_rain_frog.DesertRainFrogModel;
 import net.lacrox.arcamobs.entity.client.desert_rain_frog.DesertRainFrogRenderer;
 import net.lacrox.arcamobs.entity.client.otter.OtterModel;
@@ -17,5 +19,8 @@ public class ArcaMobsClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(DesertRainFrogModel.DESERTRAINFROG, DesertRainFrogModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.DESERTRAINFROG, DesertRainFrogRenderer::new);
+
+        EntityModelLayerRegistry.registerModelLayer(BoarModel.BOAR, BoarModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.BOAR, BoarRenderer::new);
     }
 }
