@@ -3,11 +3,15 @@ package net.lacrox.arcamobs;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.lacrox.arcamobs.block.ModBlocks;
+import net.lacrox.arcamobs.block.blocks.entity.ModBlockEntities;
 import net.lacrox.arcamobs.entity.ModEntities;
 import net.lacrox.arcamobs.entity.custom.BoarEntity;
 import net.lacrox.arcamobs.entity.custom.DesertRainFrogEntity;
 import net.lacrox.arcamobs.entity.custom.OtterEntity;
 import net.lacrox.arcamobs.entity.custom.ThornyDevilEntity;
+import net.lacrox.arcamobs.item.ModItemGroups;
+import net.lacrox.arcamobs.item.ModItems;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -19,6 +23,15 @@ public class ArcaMobs implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        // Items
+		ModItems.registerModItems();
+
+		// Blocks
+		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerModBlockEntities();
+
+		// Groups
+		ModItemGroups.registerModItemGroups();
 
 		//Mob Register
 		ModEntities.registerModEntities();

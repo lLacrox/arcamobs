@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "tag": "minecraft:wooden_stairs"
+    },
+    "S": {
+      "tag": "minecraft:logs"
+    },
+    "_": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    " _ ",
+    "O/O",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "arcamobs:birdhouse"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arcamobs:owl_harness"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tripwire_hook": {
+      "conditions": {
+        "items": [
+          {
+            "items": "arcamobs:owl_harness"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tripwire_hook"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arcamobs:owl_harness"
+    ]
+  }
+}

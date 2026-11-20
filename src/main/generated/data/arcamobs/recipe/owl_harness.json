@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "L": {
+      "item": "minecraft:lead"
+    },
+    "T": {
+      "item": "minecraft:tripwire_hook"
+    }
+  },
+  "pattern": [
+    "###",
+    " TL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "arcamobs:owl_harness"
+  }
+}

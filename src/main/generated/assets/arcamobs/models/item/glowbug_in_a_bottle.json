@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "arcamobs:item/glowbug_in_a_bottle"
+  }
+}

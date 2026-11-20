@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.2,
+  "group": "Meat",
+  "ingredient": {
+    "item": "arcamobs:raw_venison"
+  },
+  "result": {
+    "id": "arcamobs:cooked_venison"
+  }
+}

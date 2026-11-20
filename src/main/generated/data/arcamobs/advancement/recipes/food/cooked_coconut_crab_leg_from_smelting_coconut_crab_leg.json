@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_coconut_crab_leg": {
+      "conditions": {
+        "items": [
+          {
+            "items": "arcamobs:coconut_crab_leg"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arcamobs:cooked_coconut_crab_leg_from_smelting_coconut_crab_leg"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_coconut_crab_leg"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arcamobs:cooked_coconut_crab_leg_from_smelting_coconut_crab_leg"
+    ]
+  }
+}
