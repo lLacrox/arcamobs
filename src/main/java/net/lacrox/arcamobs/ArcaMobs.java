@@ -7,6 +7,7 @@ import net.lacrox.arcamobs.entity.ModEntities;
 import net.lacrox.arcamobs.entity.custom.BoarEntity;
 import net.lacrox.arcamobs.entity.custom.DesertRainFrogEntity;
 import net.lacrox.arcamobs.entity.custom.OtterEntity;
+import net.lacrox.arcamobs.entity.custom.ThornyDevilEntity;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -27,6 +28,8 @@ public class ArcaMobs implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.DESERTRAINFROG, DesertRainFrogEntity.createAttributes());
 
 		FabricDefaultAttributeRegistry.register(ModEntities.BOAR, BoarEntity.createAttributes());
+
+		FabricDefaultAttributeRegistry.register(ModEntities.THORNYDEVIL, ThornyDevilEntity.createAttributes());
 	}
 
 	public static Identifier id(String path) {
