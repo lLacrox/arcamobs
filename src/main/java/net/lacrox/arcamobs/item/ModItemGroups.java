@@ -27,8 +27,6 @@ public class ModItemGroups {
                     entries.add(ModItems.COCONUT_HALF);
                     entries.add(ModItems.RAW_DUCK);
                     entries.add(ModItems.COOKED_DUCK);
-                    entries.add(ModItems.RAW_GENERAL_FISH);
-                    entries.add(ModItems.COOKED_FISH);
                     entries.add(ModItems.RAW_LIONFISH);
                     entries.add(ModItems.COOKED_LIONFISH);
                     entries.add(ModItems.RAW_VENISON);
@@ -44,6 +42,7 @@ public class ModItemGroups {
                     entries.add(ModItems.OWL_HARNESS);
                     entries.add(ModItems.MANTIS_SHRIMP_CLAW);
                     entries.add(ModItems.MANTIS_SHRIMP_IN_A_BUCKET);
+                    entries.add(ModItems.SEASHELL);
                     }).build());
     public static final ItemGroup ARCAMOBS_EGG_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ArcaMobs.MOD_ID, "arcamobs_egg_music"),

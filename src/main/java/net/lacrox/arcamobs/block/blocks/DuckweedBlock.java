@@ -18,7 +18,7 @@ import net.minecraft.world.WorldView;
 
 public class DuckweedBlock extends PlantBlock {
     public static final MapCodec<DuckweedBlock> CODEC = createCodec(DuckweedBlock::new);
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 1.5, 16.0);
+    protected static final VoxelShape SHAPE = Block.createCuboidShape(0.0, -3.0, 0.0, 16.0, -1.0, 16.0);
 
     @Override
     public MapCodec<DuckweedBlock> getCodec() {
@@ -46,6 +46,14 @@ public class DuckweedBlock extends PlantBlock {
         return !this.canPlaceAt(state, world, pos)
                 ? Blocks.AIR.getDefaultState()
                 : super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
+    }
+
+    @Override
+    protected boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
+        if (stateFrom.isOf(this)) {
+            return true;
+        }
+        return super.isSideInvisible(state, stateFrom, direction);
     }
 
     @Override
