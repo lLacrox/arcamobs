@@ -45,7 +45,7 @@ public class ModItems {
             EntityType.AXOLOTL, Fluids.EMPTY, SoundEvents.ITEM_BUCKET_EMPTY_AXOLOTL,
             new Item.Settings().maxCount(1).component(DataComponentTypes.BUCKET_ENTITY_DATA, NbtComponent.DEFAULT)));
     public static final Item LIONFISH_IN_A_BUCKET = register("lionfish_in_a_bucket", new EntityBucketItem(
-            EntityType.AXOLOTL, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_AXOLOTL,
+            ModEntities.LIONFISH, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH,
             new Item.Settings().maxCount(1).component(DataComponentTypes.BUCKET_ENTITY_DATA, NbtComponent.DEFAULT)));
     public static final Item FISH_IN_A_BUCKET = register("fish_in_a_bucket", new EntityBucketItem(
             EntityType.AXOLOTL, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_AXOLOTL,
@@ -82,6 +82,7 @@ public class ModItems {
     public static final Item THORNY_DEVIL_SPAWN_EGG = register("thorny_devil_spawn_egg", new SpawnEggItem(ModEntities.THORNYDEVIL, 0xD8BA9C, 0x773432, new Item.Settings()));
     public static final Item DESERT_RAIN_FROG_SPAWN_EGG = register("desert_rain_frog_spawn_egg", new SpawnEggItem(ModEntities.DESERTRAINFROG, 0xE0D7C9, 0xBAA298, new Item.Settings()));
     public static final Item BOAR_SPAWN_EGG = register("boar_spawn_egg", new SpawnEggItem(ModEntities.BOAR, 0x422C26, 0x251311, new Item.Settings()));
+    public static final Item LIONFISH_SPAWN_EGG = register("lionfish_spawn_egg", new SpawnEggItem(ModEntities.LIONFISH, 0xE0D0C0, 0xC96830, new Item.Settings()));
 
     // Miscellaneous
     public static final Item PIGEON_MAIL = register("pigeon_mail", new Item(new Item.Settings()));

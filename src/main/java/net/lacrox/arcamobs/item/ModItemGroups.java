@@ -27,6 +27,7 @@ public class ModItemGroups {
                     entries.add(ModItems.COCONUT_HALF);
                     entries.add(ModItems.RAW_DUCK);
                     entries.add(ModItems.COOKED_DUCK);
+                    entries.add(ModItems.LIONFISH_IN_A_BUCKET);
                     entries.add(ModItems.RAW_LIONFISH);
                     entries.add(ModItems.COOKED_LIONFISH);
                     entries.add(ModItems.RAW_VENISON);
@@ -42,7 +43,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MANTIS_SHRIMP_CLAW);
                     entries.add(ModItems.MANTIS_SHRIMP_IN_A_BUCKET);
                     entries.add(ModItems.SEASHELL);
-                    entries.add(ModBlocks.OSTRICH_EGG);
+                    entries.add(ModItems.OSTRICH_EGG);
                     }).build());
     public static final ItemGroup ARCAMOBS_EGG_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ArcaMobs.MOD_ID, "arcamobs_spawn_eggs"),
@@ -53,6 +54,7 @@ public class ModItemGroups {
                     entries.add(ModItems.OTTER_SPAWN_EGG);
                     entries.add(ModItems.BOAR_SPAWN_EGG);
                     entries.add(ModItems.THORNY_DEVIL_SPAWN_EGG);
+                    entries.add(ModItems.LIONFISH_SPAWN_EGG);
                     }).build());
 
     public static void registerModItemGroups() {

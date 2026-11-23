@@ -10,6 +10,8 @@ import net.lacrox.arcamobs.entity.client.boar.BoarModel;
 import net.lacrox.arcamobs.entity.client.boar.BoarRenderer;
 import net.lacrox.arcamobs.entity.client.desert_rain_frog.DesertRainFrogModel;
 import net.lacrox.arcamobs.entity.client.desert_rain_frog.DesertRainFrogRenderer;
+import net.lacrox.arcamobs.entity.client.lionfish.LionfishModel;
+import net.lacrox.arcamobs.entity.client.lionfish.LionfishRenderer;
 import net.lacrox.arcamobs.entity.client.otter.OtterModel;
 import net.lacrox.arcamobs.entity.client.otter.OtterRenderer;
 import net.lacrox.arcamobs.entity.client.thorny_devil.ThornyDevilModel;
@@ -34,6 +36,9 @@ public class ArcaMobsClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(ThornyDevilModel.THORNYDEVIL, ThornyDevilModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.THORNYDEVIL, ThornyDevilRenderer::new);
+
+        EntityModelLayerRegistry.registerModelLayer(LionfishModel.LIONFISH, LionfishModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.LIONFISH, LionfishRenderer::new);
 
     }
 }

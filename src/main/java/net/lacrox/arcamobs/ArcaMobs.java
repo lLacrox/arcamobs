@@ -6,12 +6,10 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.lacrox.arcamobs.block.ModBlocks;
 import net.lacrox.arcamobs.block.blocks.entity.ModBlockEntities;
 import net.lacrox.arcamobs.entity.ModEntities;
-import net.lacrox.arcamobs.entity.custom.BoarEntity;
-import net.lacrox.arcamobs.entity.custom.DesertRainFrogEntity;
-import net.lacrox.arcamobs.entity.custom.OtterEntity;
-import net.lacrox.arcamobs.entity.custom.ThornyDevilEntity;
+import net.lacrox.arcamobs.entity.custom.*;
 import net.lacrox.arcamobs.item.ModItemGroups;
 import net.lacrox.arcamobs.item.ModItems;
+import net.minecraft.entity.passive.FishEntity;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -43,6 +41,8 @@ public class ArcaMobs implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.BOAR, BoarEntity.createAttributes());
 
 		FabricDefaultAttributeRegistry.register(ModEntities.THORNYDEVIL, ThornyDevilEntity.createAttributes());
+
+		FabricDefaultAttributeRegistry.register(ModEntities.LIONFISH, FishEntity.createFishAttributes());
 	}
 
 	public static Identifier id(String path) {
