@@ -8,6 +8,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 
 import java.util.Optional;
@@ -58,7 +59,7 @@ public class ArcamobsModelProvider extends FabricModelProvider {
     itemModelGenerator.register(ModItems.MANTIS_SHRIMP_CLAW, Models.HANDHELD);
     itemModelGenerator.register(ModItems.BISON_MILK, Models.GENERATED);
     itemModelGenerator.register(ModItems.DUCK_EGG, Models.GENERATED);
-    itemModelGenerator.register(ModItems.OSTRICH_EGG, Models.GENERATED);
+    itemModelGenerator.register(ModBlocks.OSTRICH_EGG.asItem(), Models.GENERATED);
     itemModelGenerator.register(ModItems.TRUFFLE, Models.GENERATED);
     itemModelGenerator.register(ModItems.YAK_MILK, Models.GENERATED);
     itemModelGenerator.register(ModItems.PIGEON_MAIL, Models.GENERATED);

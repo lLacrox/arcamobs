@@ -40,7 +40,7 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.HANGING_ROOTS)
                     .pistonBehavior(PistonBehavior.DESTROY)
     ));
-    public static final Block OSTRICH_EGG = registerWithItem("ostrich_egg", new OstrichEggBlock(AbstractBlock.Settings.copy(Blocks.SNIFFER_EGG)));
+    public static final Block OSTRICH_EGG = registerWithItem("ostrich_egg", new OstrichEggBlock(AbstractBlock.Settings.copy(Blocks.SNIFFER_EGG)), new Item.Settings().maxCount(8));
     public static final Block DUCKWEED = register("duckweed", new DuckweedBlock(AbstractBlock.Settings.create()
                 .breakInstantly()
                 .nonOpaque()

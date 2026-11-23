@@ -12,6 +12,7 @@ public class ArcaMobsDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ArcamobsBlockLootTableProvider::new);
 		pack.addProvider(ArcamobsBlockTagProvider::new);
 		pack.addProvider(ArcamobsItemTagProvider::new);
+		pack.addProvider(ArcamobsEntityTagProvider::new);
 		pack.addProvider(ArcamobsRecipeProvider::new);
 	}
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "arcamobs:block/duckweed"
+    "layer0": "arcamobs:item/cooked_fish"
   }
 }

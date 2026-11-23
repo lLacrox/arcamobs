@@ -10,8 +10,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-import java.util.Optional;
-
 public class ModItemGroups {
     public static final ItemGroup ARCAMOBS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ArcaMobs.MOD_ID, "arcamobs"),
@@ -43,7 +41,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MANTIS_SHRIMP_CLAW);
                     entries.add(ModItems.MANTIS_SHRIMP_IN_A_BUCKET);
                     entries.add(ModItems.SEASHELL);
-                    entries.add(ModItems.OSTRICH_EGG);
+                    entries.add(ModBlocks.OSTRICH_EGG);
                     }).build());
     public static final ItemGroup ARCAMOBS_EGG_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ArcaMobs.MOD_ID, "arcamobs_spawn_eggs"),

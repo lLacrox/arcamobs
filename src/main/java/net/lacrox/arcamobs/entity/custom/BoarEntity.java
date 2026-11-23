@@ -2,11 +2,13 @@ package net.lacrox.arcamobs.entity.custom;
 
 import net.lacrox.arcamobs.entity.ModEntities;
 import net.minecraft.entity.AnimationState;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.Angerable;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
@@ -53,9 +55,7 @@ public class BoarEntity extends AnimalEntity implements Angerable {
         this.goalSelector.add(6, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
         this.goalSelector.add(7, new LookAroundGoal(this));
 
-        this.goalSelector.add(8, new MeleeAttackGoal(this, 1.2F, true));
-
-        this.targetSelector.add(1, new RevengeGoal(this, PlayerEntity.class).setGroupRevenge());
+        this.targetSelector.add(1, new RevengeGoal(this).setGroupRevenge());
     }
 
     public static DefaultAttributeContainer.Builder createAttributes() {
@@ -79,7 +79,9 @@ public class BoarEntity extends AnimalEntity implements Angerable {
     @Override
     public void tick() {
         super.tick();
-
+        if (!this.getWorld().isClient()) {
+            this.tickAngerLogic((ServerWorld) this.getWorld(), false);
+        }
         if (this.getWorld().isClient()) {
             this.setupAnimationStates();
         }
@@ -94,6 +96,19 @@ public class BoarEntity extends AnimalEntity implements Angerable {
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
         return ModEntities.BOAR.create(world);
+    }
+
+    @Override
+    public boolean damage(DamageSource source, float amount) {
+        boolean damaged = super.damage(source, amount);
+        if (damaged && !this.getWorld().isClient()) {
+            Entity attacker = source.getAttacker();
+            if (attacker instanceof PlayerEntity player && !player.isCreative()) {
+                this.setAngryAt(player.getUuid());
+                this.chooseRandomAngerTime();
+            }
+        }
+        return damaged;
     }
 
     @Override
@@ -122,6 +137,11 @@ public class BoarEntity extends AnimalEntity implements Angerable {
         this.setAngerTime(ANGER_TIME_RANGE.get(this.random));
     }
 
+    @Override
+    public boolean canTarget(LivingEntity target) {
+        return this.getAngryAt() != null && this.getAngryAt().equals(target.getUuid()) && super.canTarget(target);
+    }
+
     class AttackGoal extends MeleeAttackGoal {
         public AttackGoal() {
             super(BoarEntity.this, 1.25, true);
@@ -147,27 +167,4 @@ public class BoarEntity extends AnimalEntity implements Angerable {
             super.stop();
         }
     }
-
-    class BoarRevengeGoal extends RevengeGoal {
-        public BoarRevengeGoal() {
-            super(BoarEntity.this);
-        }
-
-        @Override
-        public void start() {
-            super.start();
-            if (BoarEntity.this.isBaby()) {
-                this.callSameTypeForRevenge();
-                this.stop();
-            }
-        }
-
-        @Override
-        protected void setMobEntityTarget(MobEntity mob, LivingEntity target) {
-            if (mob instanceof PolarBearEntity && !mob.isBaby()) {
-                super.setMobEntityTarget(mob, target);
-            }
-        }
-    }
-
 }

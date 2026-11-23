@@ -2,8 +2,10 @@ package net.lacrox.arcamobs.list;
 
 import net.lacrox.arcamobs.ArcaMobs;
 import net.minecraft.block.Block;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.EntityTypeTags;
 import net.minecraft.registry.tag.TagKey;
 
 public class TagList {

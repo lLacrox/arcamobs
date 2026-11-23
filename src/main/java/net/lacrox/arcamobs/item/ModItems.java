@@ -75,7 +75,6 @@ public class ModItems {
     // Blocks
     public static final Item MUSSEL = register("mussel", new Item(new Item.Settings()));
     public static final Item SEASHELL = register("seashell", new Item(new Item.Settings()));
-    public static final Item OSTRICH_EGG = register("ostrich_egg", new Item(new Item.Settings().maxCount(8)));
 
     // Spawn Eggs
     public static final Item OTTER_SPAWN_EGG = register("otter_spawn_egg", new SpawnEggItem(ModEntities.OTTER, 0x91634E, 0xFFEBDB, new Item.Settings()));
