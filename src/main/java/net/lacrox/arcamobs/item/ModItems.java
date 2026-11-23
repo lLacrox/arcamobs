@@ -73,7 +73,6 @@ public class ModItems {
     public static final Item COCONUT_HALF = register("coconut_half", new Item(new Item.Settings().food(FoodList.COCONUT_HALF)));
 
     // Blocks
-    public static final Item DUCKWEED = register("duckweed", new PlaceableOnWaterItem(ModBlocks.DUCKWEED, new Item.Settings()));
     public static final Item MUSSEL = register("mussel", new Item(new Item.Settings()));
     public static final Item SEASHELL = register("seashell", new Item(new Item.Settings()));
     public static final Item OSTRICH_EGG = register("ostrich_egg", new Item(new Item.Settings().maxCount(8)));

@@ -3,6 +3,7 @@ package net.lacrox.arcamobs.block;
 import net.lacrox.arcamobs.ArcaMobs;
 import net.lacrox.arcamobs.block.blocks.DuckweedBlock;
 import net.lacrox.arcamobs.block.blocks.MyceholeBlock;
+import net.lacrox.arcamobs.block.blocks.OstrichEggBlock;
 import net.lacrox.arcamobs.block.blocks.SeashellBlock;
 import net.lacrox.arcamobs.item.ModItems;
 import net.minecraft.block.AbstractBlock;
@@ -38,7 +39,7 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.HANGING_ROOTS)
                     .pistonBehavior(PistonBehavior.DESTROY)
     ));
-    public static final Block OSTRICH_EGG = registerWithItem("ostrich_egg", new Block(AbstractBlock.Settings.copy(Blocks.SNIFFER_EGG)));
+    public static final Block OSTRICH_EGG = registerWithItem("ostrich_egg", new OstrichEggBlock(AbstractBlock.Settings.copy(Blocks.SNIFFER_EGG)));
     public static final Block DUCKWEED = register("duckweed", new DuckweedBlock(AbstractBlock.Settings.create()
                 .breakInstantly()
                 .nonOpaque()

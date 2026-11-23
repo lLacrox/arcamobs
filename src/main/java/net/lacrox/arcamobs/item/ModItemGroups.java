@@ -13,8 +13,8 @@ import net.minecraft.util.Identifier;
 import java.util.Optional;
 
 public class ModItemGroups {
-    public static final ItemGroup ARCATWEAKS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(ArcaMobs.MOD_ID, "arcatweaks"),
+    public static final ItemGroup ARCAMOBS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(ArcaMobs.MOD_ID, "arcamobs"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.SNAIL_SHELL))
                     .displayName(Text.translatable("itemGroup.arcamobs.arcamobs_group"))
                     .entries((displayContext, entries) -> {
@@ -38,14 +38,14 @@ public class ModItemGroups {
                     entries.add(ModItems.TRUFFLE);
                     entries.add(ModItems.SNAIL_IN_A_BOTTLE);
                     entries.add(ModItems.SLUG_IN_A_BOTTLE);
-                    entries.add(ModItems.PIGEON_MAIL);
                     entries.add(ModItems.OWL_HARNESS);
                     entries.add(ModItems.MANTIS_SHRIMP_CLAW);
                     entries.add(ModItems.MANTIS_SHRIMP_IN_A_BUCKET);
                     entries.add(ModItems.SEASHELL);
+                    entries.add(ModBlocks.OSTRICH_EGG);
                     }).build());
     public static final ItemGroup ARCAMOBS_EGG_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(ArcaMobs.MOD_ID, "arcamobs_egg_music"),
+            Identifier.of(ArcaMobs.MOD_ID, "arcamobs_spawn_eggs"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.DESERT_RAIN_FROG_SPAWN_EGG))
                     .displayName(Text.translatable("itemGroup.arcamobs.arcamobs_egg_group"))
                     .entries((displayContext, entries) -> {
