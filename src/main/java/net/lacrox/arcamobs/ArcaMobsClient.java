@@ -12,10 +12,13 @@ import net.lacrox.arcamobs.entity.client.desert_rain_frog.DesertRainFrogModel;
 import net.lacrox.arcamobs.entity.client.desert_rain_frog.DesertRainFrogRenderer;
 import net.lacrox.arcamobs.entity.client.lionfish.LionfishModel;
 import net.lacrox.arcamobs.entity.client.lionfish.LionfishRenderer;
+import net.lacrox.arcamobs.entity.client.mantis_shrimp.MantisShrimpModel;
+import net.lacrox.arcamobs.entity.client.mantis_shrimp.MantisShrimpRenderer;
 import net.lacrox.arcamobs.entity.client.otter.OtterModel;
 import net.lacrox.arcamobs.entity.client.otter.OtterRenderer;
 import net.lacrox.arcamobs.entity.client.thorny_devil.ThornyDevilModel;
 import net.lacrox.arcamobs.entity.client.thorny_devil.ThornyDevilRenderer;
+import net.lacrox.arcamobs.entity.custom.MantisShrimpEntity;
 import net.minecraft.client.render.RenderLayer;
 
 public class ArcaMobsClient implements ClientModInitializer {
@@ -39,6 +42,9 @@ public class ArcaMobsClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(LionfishModel.LIONFISH, LionfishModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.LIONFISH, LionfishRenderer::new);
+
+        EntityModelLayerRegistry.registerModelLayer(MantisShrimpModel.MANTISSHRIMP, MantisShrimpModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.MANTISSHRIMP, MantisShrimpRenderer::new);
 
     }
 }

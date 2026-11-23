@@ -34,6 +34,11 @@ public class ModEntities {
             EntityType.Builder.create(LionfishEntity::new, SpawnGroup.WATER_AMBIENT)
                     .dimensions(0.5f, 0.45f).build());
 
+    public static final EntityType<MantisShrimpEntity> MANTISSHRIMP = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(ArcaMobs.MOD_ID, "mantisshrimp"),
+            EntityType.Builder.create(MantisShrimpEntity::new, SpawnGroup.WATER_CREATURE)
+                    .dimensions(0.9f, 1.15f).build());
+
     public static void registerModEntities() {
         ArcaMobs.LOGGER.info("Spawning Wildlife");
     }

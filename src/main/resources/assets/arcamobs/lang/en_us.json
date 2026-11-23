@@ -3,6 +3,8 @@
   "entity.arcamobs.desertrainfrog": "Desert Rain Frog",
   "entity.arcamobs.boar": "Boar",
   "entity.arcamobs.lionfish": "Lionfish",
+  "enitty.arcamobs.thornydevil": "Thorny Devil",
+  "entity.arcamobs.mantisshrimp": "Mantis Shrimp",
 
   "block.arcamobs.badger_sett": "Badger Sett",
   "block.arcamobs.bird_nest": "Bird Nest",
@@ -18,7 +20,6 @@
 
   "item.arcamobs.antler": "Antler",
   "item.arcamobs.bison_milk": "Bison Milk",
-  "item.arcamobs.boar_spawn_egg": "Boar Spawn Egg",
   "item.arcamobs.chum_cocktail": "Chum Cocktail",
   "item.arcamobs.coconut_crab_leg": "Coconut Crab Leg",
   "item.arcamobs.coconut_half": "Coconut Half",
@@ -28,7 +29,6 @@
   "item.arcamobs.cooked_lionfish": "Cooked Lionfish",
   "item.arcamobs.cooked_venison": "Cooked Venison",
   "item.arcamobs.desert_rain_frog_in_a_bowl": "Desert Rain Frog in a Bowl",
-  "item.arcamobs.desert_rain_frog_spawn_egg": "Desert Rain Frog Spawn Egg",
   "item.arcamobs.duck_egg": "Duck Egg",
   "item.arcamobs.glowbug_in_a_bottle": "Glowbug in a Bottle",
   "item.arcamobs.jellyfish_in_a_bucket": "Jellyfish in a Bucket",
@@ -38,7 +38,6 @@
   "item.arcamobs.mussel": "Mussel",
   "item.arcamobs.myce_in_a_bowl": "Myce in a Bowl",
   "item.arcamobs.ostrich_egg": "Ostrich Egg",
-  "item.arcamobs.otter_spawn_egg": "Otter Spawn Egg",
   "item.arcamobs.owl_harness": "Owl Harness",
   "item.arcamobs.owl_harness_horned": "Owl Harness (Horned)",
   "item.arcamobs.owl_harness_snow": "Owl Harness (Snow)",
@@ -52,10 +51,15 @@
   "item.arcamobs.snail_in_a_bottle": "Snail in a Bottle",
   "item.arcamobs.snail_shell": "Snail Shell",
   "item.arcamobs.stoat": "Stoat",
+  "item.arcamobs.truffle": "Truffle",
+
+  "item.arcamobs.boar_spawn_egg": "Boar Spawn Egg",
+  "item.arcamobs.desert_rain_frog_spawn_egg": "Desert Rain Frog Spawn Egg",
+  "item.arcamobs.otter_spawn_egg": "Otter Spawn Egg",
   "item.arcamobs.thorny_devil_spawn_egg": "Thorny Devil Spawn Egg",
   "item.arcamobs.lionfish_spawn_egg": "Lionfish Spawn Egg",
-  "item.arcamobs.truffle": "Truffle",
-  "item.arcamobs.yak_milk": "Yak Milk",
+  "item.arcamobs.mantis_shrimp_spawn_egg": "Mantis Shrimp Spawn Egg",
+
   "itemGroup.arcamobs.arcamobs_group": "Arcamobs",
   "itemGroup.arcamobs.arcamobs_egg_group": "Arcamobs Spawn Eggs"
 }

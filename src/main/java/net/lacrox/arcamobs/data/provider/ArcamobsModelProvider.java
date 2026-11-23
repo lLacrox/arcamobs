@@ -43,7 +43,6 @@ public class ArcamobsModelProvider extends FabricModelProvider {
     itemModelGenerator.register(ModItems.MANTIS_SHRIMP_IN_A_BUCKET, Models.GENERATED);
     itemModelGenerator.register(ModItems.SLUG_IN_A_BOTTLE, Models.GENERATED);
     itemModelGenerator.register(ModItems.LIONFISH_IN_A_BUCKET, Models.GENERATED);
-    itemModelGenerator.register(ModItems.FISH_IN_A_BUCKET, Models.GENERATED);
     itemModelGenerator.register(ModItems.JELLYFISH_IN_A_BUCKET, Models.GENERATED);
     itemModelGenerator.register(ModItems.STOAT, Models.HANDHELD);
     itemModelGenerator.register(ModItems.OWL_HARNESS_HORNED, Models.HANDHELD);

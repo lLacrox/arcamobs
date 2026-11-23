@@ -43,6 +43,8 @@ public class ArcaMobs implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.THORNYDEVIL, ThornyDevilEntity.createAttributes());
 
 		FabricDefaultAttributeRegistry.register(ModEntities.LIONFISH, FishEntity.createFishAttributes());
+
+		FabricDefaultAttributeRegistry.register(ModEntities.MANTISSHRIMP, MantisShrimpEntity.createAttributes());
 	}
 
 	public static Identifier id(String path) {

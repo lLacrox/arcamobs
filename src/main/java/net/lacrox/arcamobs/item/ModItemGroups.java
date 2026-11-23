@@ -53,6 +53,7 @@ public class ModItemGroups {
                     entries.add(ModItems.BOAR_SPAWN_EGG);
                     entries.add(ModItems.THORNY_DEVIL_SPAWN_EGG);
                     entries.add(ModItems.LIONFISH_SPAWN_EGG);
+                    entries.add(ModItems.MANTIS_SHRIMP_SPAWN_EGG);
                     }).build());
 
     public static void registerModItemGroups() {

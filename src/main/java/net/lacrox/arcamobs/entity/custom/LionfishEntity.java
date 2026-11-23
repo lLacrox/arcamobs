@@ -83,7 +83,7 @@ public class LionfishEntity extends FishEntity {
         if (this.isAlive()) {
             for (MobEntity mob : this.getWorld().getEntitiesByClass(
                     MobEntity.class,
-                    this.getBoundingBox().expand(0.3),
+                    this.getBoundingBox().expand(0.4),
                     mob -> mob != this && BLOW_UP_TARGET_PREDICATE.test(this, mob))) {
                 if (mob.isAlive()) {
                     this.sting(mob);
@@ -94,7 +94,7 @@ public class LionfishEntity extends FishEntity {
 
     private void sting(MobEntity mob) {
         if (mob.damage(this.getDamageSources().mobAttack(this), 1)) {
-            mob.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 40, 0), this);
+            mob.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 80, 2), this);
             this.playSound(SoundEvents.ENTITY_PUFFER_FISH_STING, 1.0F, 1.0F);
         }
     }
@@ -108,7 +108,7 @@ public class LionfishEntity extends FishEntity {
                         .sendPacket(new GameStateChangeS2CPacket(GameStateChangeS2CPacket.PUFFERFISH_STING, GameStateChangeS2CPacket.DEMO_OPEN_SCREEN));
             }
 
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 40, 0), this);
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 80, 2), this);
         }
     }
 
