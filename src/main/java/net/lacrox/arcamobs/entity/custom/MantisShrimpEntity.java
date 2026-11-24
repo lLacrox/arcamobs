@@ -1,5 +1,6 @@
 package net.lacrox.arcamobs.entity.custom;
 
+import net.lacrox.arcamobs.block.ModBlocks;
 import net.lacrox.arcamobs.entity.ModEntities;
 import net.lacrox.arcamobs.item.ModItems;
 import net.minecraft.entity.*;
@@ -46,7 +47,7 @@ public class MantisShrimpEntity extends AnimalEntity implements Angerable {
         this.goalSelector.add(1, new MantisShrimpEntity.AttackGoal());
 
         this.goalSelector.add(2, new AnimalMateGoal(this, 1.150));
-        this.goalSelector.add(3, new TemptGoal(this, 1.25D, Ingredient.ofItems(ModItems.SEASHELL), false));
+        this.goalSelector.add(3, new TemptGoal(this, 1.25D, Ingredient.ofItems(ModBlocks.SEASHELL), false));
 
         this.goalSelector.add(6, new WanderAroundFarGoal(this, 1.0D));
         this.goalSelector.add(7, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
@@ -113,7 +114,7 @@ public class MantisShrimpEntity extends AnimalEntity implements Angerable {
 
     @Override
     public boolean isBreedingItem(ItemStack stack) {
-        return stack.isOf(ModItems.SEASHELL);
+        return stack.isOf(ModBlocks.SEASHELL.asItem());
     }
 
     @Nullable

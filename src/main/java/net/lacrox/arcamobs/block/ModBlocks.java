@@ -25,30 +25,31 @@ public class ModBlocks {
             .breakInstantly()
             .sounds(BlockSoundGroup.CORAL)
             .pistonBehavior(PistonBehavior.DESTROY)
-    ));
+    ), new Item.Settings());
     public static final Block SEASHELL = registerWithItem("seashell", new SeashellBlock(AbstractBlock.Settings.create()
             .breakInstantly()
             .sounds(BlockSoundGroup.CORAL)
             .pistonBehavior(PistonBehavior.DESTROY)
-    ));
+
+    ), new Item.Settings());
     public static final Block SNAIL_SHELL = registerWithItem("snail_shell", new Block(AbstractBlock.Settings.create()
             .breakInstantly()
             .sounds(BlockSoundGroup.CORAL)
             .pistonBehavior(PistonBehavior.DESTROY)
-    ));
+    ), new Item.Settings());
     public static final Block BIRD_NEST = registerWithItem("bird_nest", new Block(AbstractBlock.Settings.create()
                     .sounds(BlockSoundGroup.HANGING_ROOTS)
                     .pistonBehavior(PistonBehavior.DESTROY)
     ));
     public static final Block OSTRICH_EGG = registerWithItem("ostrich_egg", new OstrichEggBlock(AbstractBlock.Settings.copy(Blocks.SNIFFER_EGG)), new Item.Settings().maxCount(8));
-    public static final Block DUCKWEED = register("duckweed", new DuckweedBlock(AbstractBlock.Settings.create()
+    public static final Block DUCKWEED = registerWithItem("duckweed", new DuckweedBlock(AbstractBlock.Settings.create()
                 .breakInstantly()
                 .nonOpaque()
                 .mapColor(MapColor.GREEN)
                 .sounds(BlockSoundGroup.LILY_PAD)
                 .pistonBehavior(PistonBehavior.DESTROY)
                 .noCollision()
-    ));
+    ), new Item.Settings());
     public static final Block COCONUT = registerWithItem("coconut", new Block(AbstractBlock.Settings.copy(Blocks.MELON)));
     public static final Block BIRDHOUSE = registerWithItem("birdhouse", new Block(AbstractBlock.Settings.copy(Blocks.BEEHIVE)));
     public static final Block TERRARIUM = registerWithItem("terrarium", new Block(AbstractBlock.Settings.copy(Blocks.GLASS)));

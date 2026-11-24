@@ -16,14 +16,15 @@ import net.minecraft.sound.SoundEvents;
 public class ModItems {
 
     // Mob Drops
-    public static final Item SNAIL_SHELL = register("snail_shell", new Item(new Item.Settings()));
     public static final Item RAW_VENISON = register("raw_venison", new Item(new Item.Settings().food(FoodList.RAW_VENISON)));
     public static final Item RAW_GENERAL_FISH = register("raw_general_fish", new Item(new Item.Settings().food(FoodList.RAW_GENERAL_FISH)));
     public static final Item RAW_LIONFISH = register("raw_lionfish", new Item(new Item.Settings().food(FoodList.RAW_LIONFISH)));
     public static final Item RAW_DUCK = register("raw_duck", new Item(new Item.Settings().food(FoodList.RAW_DUCK)));
     public static final Item COCONUT_CRAB_LEG = register("coconut_crab_leg", new Item(new Item.Settings().food(FoodList.COCONUT_CRAB_LEG)));
     public static final Item MANTIS_SHRIMP_CLAW = register("mantis_shrimp_claw", new Item(new Item.Settings()));
+    public static final Item FIDDLER_CLAW = register("fiddler_claw", new Item(new Item.Settings()));
     public static final Item ANTLER = register("antler", new Item(new Item.Settings()));
+    public static final Item OSTRICH_FEATHER = register("ostrich_feather", new Item(new Item.Settings()));
 
     // Buckets, Bowls and Bottles
     public static final Item SNAIL_IN_A_BOTTLE = register("snail_in_a_bottle", new EntityBucketItem(
@@ -68,10 +69,6 @@ public class ModItems {
     public static final Item YAK_MILK = register("yak_milk", new MilkBucketItem(new Item.Settings().maxCount(1)));
     public static final Item COOKED_VENISON = register("cooked_venison", new Item(new Item.Settings().food(FoodList.COOKED_VENISON)));
     public static final Item COCONUT_HALF = register("coconut_half", new Item(new Item.Settings().food(FoodList.COCONUT_HALF)));
-
-    // Blocks
-    public static final Item MUSSEL = register("mussel", new Item(new Item.Settings()));
-    public static final Item SEASHELL = register("seashell", new Item(new Item.Settings()));
 
     // Spawn Eggs
     public static final Item OTTER_SPAWN_EGG = register("otter_spawn_egg", new SpawnEggItem(ModEntities.OTTER, 0x91634E, 0xFFEBDB, new Item.Settings()));

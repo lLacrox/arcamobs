@@ -13,35 +13,43 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
     public static final ItemGroup ARCAMOBS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ArcaMobs.MOD_ID, "arcamobs"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.SNAIL_SHELL))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.SNAIL_SHELL))
                     .displayName(Text.translatable("itemGroup.arcamobs.arcamobs_group"))
                     .entries((displayContext, entries) -> {
-                    entries.add(ModItems.SNAIL_SHELL);
+                    entries.add(ModBlocks.SNAIL_SHELL);
+                    entries.add(ModItems.SNAIL_IN_A_BOTTLE);
+                    entries.add(ModItems.SLUG_IN_A_BOTTLE);
                     entries.add(ModItems.ANTLER);
-                    entries.add(ModItems.BISON_MILK);
-                    entries.add(ModItems.CHUM_COCKTAIL);
+                    entries.add(ModItems.RAW_VENISON);
+                    entries.add(ModItems.COOKED_VENISON);
                     entries.add(ModItems.COCONUT_CRAB_LEG);
                     entries.add(ModItems.COOKED_COCONUT_CRAB_LEG);
+                    entries.add(ModBlocks.COCONUT);
                     entries.add(ModItems.COCONUT_HALF);
+                    entries.add(ModItems.BISON_MILK);
+                    entries.add(ModItems.YAK_MILK);
+                    entries.add(ModItems.TRUFFLE);
+                    entries.add(ModItems.DUCK_EGG);
                     entries.add(ModItems.RAW_DUCK);
                     entries.add(ModItems.COOKED_DUCK);
+                    entries.add(ModBlocks.OSTRICH_EGG.asItem());
+                    entries.add(ModItems.OSTRICH_FEATHER);
+                    entries.add(ModBlocks.BIRD_NEST);
+                    entries.add(ModBlocks.BIRDHOUSE);
+                    entries.add(ModItems.OWL_HARNESS);
+                    entries.add(ModItems.DESERT_RAIN_FROG_IN_A_BOWL);
+                    entries.add(ModItems.MYCE_IN_A_BOWL);
+                    entries.add(ModBlocks.MYCEHOLE);
                     entries.add(ModItems.LIONFISH_IN_A_BUCKET);
                     entries.add(ModItems.RAW_LIONFISH);
                     entries.add(ModItems.COOKED_LIONFISH);
-                    entries.add(ModItems.RAW_VENISON);
-                    entries.add(ModItems.COOKED_VENISON);
-                    entries.add(ModItems.DESERT_RAIN_FROG_IN_A_BOWL);
-                    entries.add(ModItems.MYCE_IN_A_BOWL);
-                    entries.add(ModItems.DUCK_EGG);
-                    entries.add(ModItems.YAK_MILK);
-                    entries.add(ModItems.TRUFFLE);
-                    entries.add(ModItems.SNAIL_IN_A_BOTTLE);
-                    entries.add(ModItems.SLUG_IN_A_BOTTLE);
-                    entries.add(ModItems.OWL_HARNESS);
                     entries.add(ModItems.MANTIS_SHRIMP_CLAW);
                     entries.add(ModItems.MANTIS_SHRIMP_IN_A_BUCKET);
-                    entries.add(ModItems.SEASHELL);
-                    entries.add(ModBlocks.OSTRICH_EGG);
+                    entries.add(ModBlocks.SEASHELL);
+                    entries.add(ModBlocks.MUSSEL);
+                    entries.add(ModItems.CHUM_COCKTAIL);
+                    entries.add(ModBlocks.BADGER_SETT);
+                    entries.add(ModBlocks.TERRARIUM);
                     }).build());
     public static final ItemGroup ARCAMOBS_EGG_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ArcaMobs.MOD_ID, "arcamobs_spawn_eggs"),

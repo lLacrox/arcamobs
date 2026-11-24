@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "arcamobs:item/mantis_shrimp_claw"
+    "layer0": "arcamobs:item/fiddler_claw"
   }
 }

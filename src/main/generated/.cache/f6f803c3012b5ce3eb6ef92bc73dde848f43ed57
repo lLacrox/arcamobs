@@ -1,4 +1,4 @@
-// 1.21.1	2026-11-23T13:45:03.9326904	ArcaMobs/Model Definitions
+// 1.21.1	2026-11-24T13:59:44.7077795	ArcaMobs/Model Definitions
 7d281cc73ad841ab237d38ef30860a131e0f0cc1 assets\arcamobs\models\item\coconut_half.json
 c153681b6590a6cd2ceacfdc7957a796e5d4ee1d assets\arcamobs\blockstates\mussel.json
 d84dbba642fd1cfb7b1ac3c9c6de80b5edd123f6 assets\arcamobs\models\block\snail_shell.json
@@ -8,11 +8,12 @@ ee8374724c55447a0b49f75ffd965c89f7d1ad58 assets\arcamobs\models\item\cooked_duck
 63ae6a279b29ee210961f1d9966ec9dd3830e01e assets\arcamobs\models\item\raw_lionfish.json
 ecb2b43486bdf19ce5f3a5b935a492aee7afea5c assets\arcamobs\models\item\cooked_fish.json
 407a9d1cbc1b21b447402d2446dd8bbd49e7271f assets\arcamobs\models\item\badger_sett.json
+c886fcc455190162b52580c0185208f4fe24f4ac assets\arcamobs\models\item\ostrich_feather.json
 69e064c6b56d231df0fe79ea74e1e48375cb7065 assets\arcamobs\models\item\truffle.json
 b73f5b0bdcbc312d8c7f01bb0442d4b874909cf5 assets\arcamobs\models\item\owl_harness.json
 61b15998f2b60c53820adb2a172aaa43f0ede15e assets\arcamobs\blockstates\mycehole.json
-0878f86c559e51311f45702e2282f5dca518f321 assets\arcamobs\models\item\cooked_lionfish.json
 d2344323e42b93933a405760bda7c050fab1d4c6 assets\arcamobs\blockstates\birdhouse.json
+0878f86c559e51311f45702e2282f5dca518f321 assets\arcamobs\models\item\cooked_lionfish.json
 388ff8d9aaba44d138a988f6ee69865b134e2454 assets\arcamobs\blockstates\snail_shell.json
 8e29b5f03053e38a5963db9295b6d5755be9c38f assets\arcamobs\models\block\birdhouse.json
 604307d0a40a990a3e909ae49dc0437d2bc12965 assets\arcamobs\models\block\badger_sett.json
@@ -21,8 +22,8 @@ d2344323e42b93933a405760bda7c050fab1d4c6 assets\arcamobs\blockstates\birdhouse.j
 416676fc944ef984b45d69a01755a776995772e0 assets\arcamobs\models\item\antler.json
 0ced3a1224458eb5d4f747b6026dee22f1db7be4 assets\arcamobs\models\item\mycehole.json
 de73b81738e8004d0bde281561a163ac2ed620bb assets\arcamobs\models\item\seashell.json
+050e81bea383549cc205fdcf4519942dba5f60e8 assets\arcamobs\models\item\fiddler_claw.json
 c761ca5cfcebef85859653dfe1084d79d6635725 assets\arcamobs\models\item\coconut_crab_leg.json
-234aefcd435d25ad014f53f149095b24be852c54 assets\arcamobs\models\item\mantis_shrimp_claw.json
 57f39ffb8ce519840efb3e82b5f68cdb1070dfcf assets\arcamobs\models\item\coconut.json
 8bcbdf41da8cd47af8827e97438fb7d4a583c8a8 assets\arcamobs\models\block\bird_nest.json
 afc3c5b455891ffc3cc08e867b34f97522a5e4e5 assets\arcamobs\models\item\ostrich_egg.json
@@ -42,8 +43,8 @@ b9892c6e95931f2530e642de80c2f6a208f10a5b assets\arcamobs\blockstates\coconut.jso
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\arcamobs\models\item\otter_spawn_egg.json
 b559f65eb9fb661fa2b8de3c547024041facd456 assets\arcamobs\models\item\lionfish_in_a_bucket.json
 9999ab4dde8e6d766e7f781bb0aad009acd1e357 assets\arcamobs\models\block\coconut.json
-6aa062cdbdcfea0485bb531631bb43570a290fff assets\arcamobs\models\item\bison_milk.json
 08c3bc37e24282ad1df858c0d9830c8faff4752f assets\arcamobs\models\item\raw_venison.json
+6aa062cdbdcfea0485bb531631bb43570a290fff assets\arcamobs\models\item\bison_milk.json
 08bc3977d890e73b1b46a6f9fc0ecc68ef814184 assets\arcamobs\blockstates\ostrich_egg.json
 6ec1cf8c2c511d25a462944cfbf6c425998e4229 assets\arcamobs\models\item\mussel.json
 151c78812af5ceab77038dfdf8b7db87df7396a9 assets\arcamobs\models\item\myce_in_a_bowl.json
@@ -55,8 +56,8 @@ a723ba8da170b75371f9d4eda9303274555a9cf7 assets\arcamobs\models\block\mussel.jso
 9cf9e78d705763329d0ac0bf0099df934ccde129 assets\arcamobs\models\item\cooked_venison.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\arcamobs\models\item\desert_rain_frog_spawn_egg.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\arcamobs\models\item\boar_spawn_egg.json
-ea620b588cc9054b8b5d613f3ee2d8f3c4170d5b assets\arcamobs\models\item\fish_in_a_bucket.json
 4aa3ec82f4cc7293be26a24f10ae34540b5e53b7 assets\arcamobs\models\item\pigeon_mail.json
+021b45086e6be9bd341d120ee5f9e572ba5db92f assets\arcamobs\models\item\duckweed.json
 7f6739db9a4c802d72c80748f1e918648c0b2a4f assets\arcamobs\models\item\bird_nest.json
 52864f19a1117bf4a9a501b60580ba10fd72dc0c assets\arcamobs\models\item\stoat.json
 68d7a5dff08367af6eb9bfc2601cccf6d68cb558 assets\arcamobs\models\item\duck_egg.json

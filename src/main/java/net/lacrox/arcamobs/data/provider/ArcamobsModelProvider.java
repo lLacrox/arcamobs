@@ -35,7 +35,7 @@ public class ArcamobsModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
     itemModelGenerator.register(ModItems.COCONUT_HALF, Models.GENERATED);
-    itemModelGenerator.register(ModItems.SNAIL_SHELL, Models.GENERATED);
+    itemModelGenerator.register(ModBlocks.SNAIL_SHELL.asItem(), Models.GENERATED);
     itemModelGenerator.register(ModItems.SNAIL_IN_A_BOTTLE, Models.GENERATED);
     itemModelGenerator.register(ModItems.DESERT_RAIN_FROG_IN_A_BOWL, Models.GENERATED);
     itemModelGenerator.register(ModItems.GLOWBUG_IN_A_BOTTLE, Models.GENERATED);
@@ -55,7 +55,7 @@ public class ArcamobsModelProvider extends FabricModelProvider {
     itemModelGenerator.register(ModItems.COOKED_DUCK, Models.GENERATED);
     itemModelGenerator.register(ModItems.COCONUT_CRAB_LEG, Models.GENERATED);
     itemModelGenerator.register(ModItems.COOKED_COCONUT_CRAB_LEG, Models.GENERATED);
-    itemModelGenerator.register(ModItems.MANTIS_SHRIMP_CLAW, Models.HANDHELD);
+    itemModelGenerator.register(ModItems.FIDDLER_CLAW, Models.HANDHELD);
     itemModelGenerator.register(ModItems.BISON_MILK, Models.GENERATED);
     itemModelGenerator.register(ModItems.DUCK_EGG, Models.GENERATED);
     itemModelGenerator.register(ModBlocks.OSTRICH_EGG.asItem(), Models.GENERATED);
@@ -66,8 +66,10 @@ public class ArcamobsModelProvider extends FabricModelProvider {
     itemModelGenerator.register(ModItems.ANTLER, Models.GENERATED);
     itemModelGenerator.register(ModItems.RAW_VENISON, Models.GENERATED);
     itemModelGenerator.register(ModItems.COOKED_VENISON, Models.GENERATED);
-    itemModelGenerator.register(ModItems.MUSSEL, Models.GENERATED);
-    itemModelGenerator.register(ModItems.SEASHELL, Models.GENERATED);
+    itemModelGenerator.register(ModBlocks.MUSSEL.asItem(), Models.GENERATED);
+    itemModelGenerator.register(ModBlocks.SEASHELL.asItem(), Models.GENERATED);
+    itemModelGenerator.register(ModItems.OSTRICH_FEATHER, Models.GENERATED);
+    itemModelGenerator.register(ModBlocks.DUCKWEED.asItem(), Models.GENERATED);
     itemModelGenerator.register(ModItems.OTTER_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
     itemModelGenerator.register(ModItems.THORNY_DEVIL_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
     itemModelGenerator.register(ModItems.DESERT_RAIN_FROG_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
