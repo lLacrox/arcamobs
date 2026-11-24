@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "arcamobs:item/myce_in_a_bowl"
+    "layer0": "arcamobs:item/myce_bowl/myce_bowl_red"
   }
 }

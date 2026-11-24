@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "arcamobs:item/desert_rain_frog_in_a_bowl"
+    "layer0": "arcamobs:item/desert_rain_frog_bowl"
   }
 }

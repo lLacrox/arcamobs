@@ -30,7 +30,7 @@ public class ModItems {
             EntityType.AXOLOTL, Fluids.EMPTY, SoundEvents.ITEM_BUCKET_EMPTY_AXOLOTL,
             new Item.Settings().maxCount(1).component(DataComponentTypes.BUCKET_ENTITY_DATA, NbtComponent.DEFAULT)));
     public static final Item DESERT_RAIN_FROG_IN_A_BOWL = register("desert_rain_frog_in_a_bowl", new EntityBucketItem(
-            ModEntities.DESERTRAINFROG, Fluids.EMPTY, SoundEvents.ITEM_BUCKET_EMPTY_AXOLOTL,
+            ModEntities.DESERTRAINFROG, Fluids.EMPTY, SoundEvents.BLOCK_HONEY_BLOCK_PLACE,
             new Item.Settings().maxCount(1).component(DataComponentTypes.BUCKET_ENTITY_DATA, NbtComponent.DEFAULT)));
     public static final Item GLOWBUG_IN_A_BOTTLE = register("glowbug_in_a_bottle", new EntityBucketItem(
             EntityType.AXOLOTL, Fluids.EMPTY, SoundEvents.ITEM_BUCKET_EMPTY_AXOLOTL,
