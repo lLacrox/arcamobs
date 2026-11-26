@@ -26,8 +26,6 @@ public class ModItemGroups {
                     entries.add(ModItems.COOKED_COCONUT_CRAB_LEG);
                     entries.add(ModBlocks.COCONUT);
                     entries.add(ModItems.COCONUT_HALF);
-                    entries.add(ModItems.BISON_MILK);
-                    entries.add(ModItems.YAK_MILK);
                     entries.add(ModItems.TRUFFLE);
                     entries.add(ModItems.DUCK_EGG);
                     entries.add(ModItems.RAW_DUCK);

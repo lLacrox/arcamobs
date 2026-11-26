@@ -5,13 +5,18 @@ import net.lacrox.arcamobs.block.ModBlocks;
 import net.lacrox.arcamobs.entity.ModEntities;
 import net.lacrox.arcamobs.list.FoodList;
 import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.AttributeModifierSlot;
+import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.component.type.NbtComponent;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.Identifier;
 
 public class ModItems {
 
@@ -21,7 +26,13 @@ public class ModItems {
     public static final Item RAW_LIONFISH = register("raw_lionfish", new Item(new Item.Settings().food(FoodList.RAW_LIONFISH)));
     public static final Item RAW_DUCK = register("raw_duck", new Item(new Item.Settings().food(FoodList.RAW_DUCK)));
     public static final Item COCONUT_CRAB_LEG = register("coconut_crab_leg", new Item(new Item.Settings().food(FoodList.COCONUT_CRAB_LEG)));
-    public static final Item MANTIS_SHRIMP_CLAW = register("mantis_shrimp_claw", new Item(new Item.Settings()));
+    public static final Item MANTIS_SHRIMP_CLAW = register("mantis_shrimp_claw", new Item(new Item.Settings()
+            .attributeModifiers(AttributeModifiersComponent.builder().add
+                    (EntityAttributes.GENERIC_ATTACK_KNOCKBACK, new EntityAttributeModifier
+                            (Identifier.of("arcamobs", "mantis_shrimp_claw_knockback"),
+                                    2.0,
+                                    EntityAttributeModifier.Operation.ADD_VALUE),
+                            AttributeModifierSlot.MAINHAND).build())));
     public static final Item FIDDLER_CLAW = register("fiddler_claw", new Item(new Item.Settings()));
     public static final Item ANTLER = register("antler", new Item(new Item.Settings()));
     public static final Item OSTRICH_FEATHER = register("ostrich_feather", new Item(new Item.Settings()));
@@ -63,20 +74,18 @@ public class ModItems {
     public static final Item COOKED_FISH = register("cooked_fish", new Item(new Item.Settings().food(FoodList.COOKED_FISH)));
     public static final Item COOKED_DUCK = register("cooked_duck", new Item(new Item.Settings().food(FoodList.COOKED_DUCK)));
     public static final Item COOKED_COCONUT_CRAB_LEG = register( "cooked_coconut_crab_leg", new Item(new Item.Settings().food(FoodList.COOKED_COCONUT_CRAB_LEG)));
-    public static final Item BISON_MILK = register("bison_milk", new MilkBucketItem(new Item.Settings().maxCount(1)));
     public static final Item DUCK_EGG = register("duck_egg", new Item(new Item.Settings().maxCount(16)));
     public static final Item TRUFFLE = register("truffle", new Item(new Item.Settings().food(FoodList.TRUFFLE)));
-    public static final Item YAK_MILK = register("yak_milk", new MilkBucketItem(new Item.Settings().maxCount(1)));
     public static final Item COOKED_VENISON = register("cooked_venison", new Item(new Item.Settings().food(FoodList.COOKED_VENISON)));
     public static final Item COCONUT_HALF = register("coconut_half", new Item(new Item.Settings().food(FoodList.COCONUT_HALF)));
 
     // Spawn Eggs
-    public static final Item OTTER_SPAWN_EGG = register("otter_spawn_egg", new SpawnEggItem(ModEntities.OTTER, 0x91634E, 0xFFEBDB, new Item.Settings()));
-    public static final Item THORNY_DEVIL_SPAWN_EGG = register("thorny_devil_spawn_egg", new SpawnEggItem(ModEntities.THORNYDEVIL, 0xD8BA9C, 0x773432, new Item.Settings()));
-    public static final Item DESERT_RAIN_FROG_SPAWN_EGG = register("desert_rain_frog_spawn_egg", new SpawnEggItem(ModEntities.DESERTRAINFROG, 0xE0D7C9, 0xBAA298, new Item.Settings()));
-    public static final Item BOAR_SPAWN_EGG = register("boar_spawn_egg", new SpawnEggItem(ModEntities.BOAR, 0x422C26, 0x251311, new Item.Settings()));
-    public static final Item LIONFISH_SPAWN_EGG = register("lionfish_spawn_egg", new SpawnEggItem(ModEntities.LIONFISH, 0xE0D0C0, 0xC96830, new Item.Settings()));
-    public static final Item MANTIS_SHRIMP_SPAWN_EGG = register("mantis_shrimp_spawn_egg", new SpawnEggItem(ModEntities.MANTISSHRIMP, 0x73D639, 0x06427F, new Item.Settings()));
+    public static final Item OTTER_SPAWN_EGG = register("otter_spawn_egg", new SpawnEggItem(ModEntities.OTTER, 0xFFFFFF, 0xFFEBDB, new Item.Settings()));
+    public static final Item THORNY_DEVIL_SPAWN_EGG = register("thorny_devil_spawn_egg", new SpawnEggItem(ModEntities.THORNYDEVIL, 0xFFFFFF, 0x773432, new Item.Settings()));
+    public static final Item DESERT_RAIN_FROG_SPAWN_EGG = register("desert_rain_frog_spawn_egg", new SpawnEggItem(ModEntities.DESERTRAINFROG, 0xFFFFFF, 0xBAA298, new Item.Settings()));
+    public static final Item BOAR_SPAWN_EGG = register("boar_spawn_egg", new SpawnEggItem(ModEntities.BOAR, 0xFFFFFF, 0x251311, new Item.Settings()));
+    public static final Item LIONFISH_SPAWN_EGG = register("lionfish_spawn_egg", new SpawnEggItem(ModEntities.LIONFISH, 0xFFFFFF, 0xC96830, new Item.Settings()));
+    public static final Item MANTIS_SHRIMP_SPAWN_EGG = register("mantis_shrimp_spawn_egg", new SpawnEggItem(ModEntities.MANTISSHRIMP, 0xFFFFFF, 0x06427F, new Item.Settings()));
 
     // Miscellaneous
     public static final Item PIGEON_MAIL = register("pigeon_mail", new Item(new Item.Settings()));

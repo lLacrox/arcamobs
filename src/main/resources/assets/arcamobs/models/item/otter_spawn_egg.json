@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "arcamobs:item/yak_milk"
+    "layer0": "arcamobs:item/spawn_eggs/otter_spawn_egg"
   }
 }

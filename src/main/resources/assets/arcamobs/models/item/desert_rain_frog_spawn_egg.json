@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "arcamobs:item/spawn_eggs/desert_rain_frog_spawn_egg"
+  }
+}

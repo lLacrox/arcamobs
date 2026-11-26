@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "all": "arcamobs:block/coconut"
+    "bottom": "arcamobs:block/coconut/coconut_bottom",
+    "side": "arcamobs:block/coconut/coconut_side",
+    "top": "arcamobs:block/coconut/coconut_top"
   }
 }

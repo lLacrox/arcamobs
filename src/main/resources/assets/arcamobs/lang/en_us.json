@@ -19,7 +19,6 @@
   "block.arcamobs.terrarium": "Terrarium",
 
   "item.arcamobs.antler": "Antler",
-  "item.arcamobs.bison_milk": "Bison Milk",
   "item.arcamobs.chum_cocktail": "Chum Cocktail",
   "item.arcamobs.coconut_crab_leg": "Coconut Crab Leg",
   "item.arcamobs.coconut_half": "Coconut Half",
@@ -52,6 +51,7 @@
   "item.arcamobs.snail_shell": "Snail Shell",
   "item.arcamobs.stoat": "Stoat",
   "item.arcamobs.truffle": "Truffle",
+  "item.arcamobs.ostrich_feather": "Ostrich Feather",
 
   "item.arcamobs.boar_spawn_egg": "Boar Spawn Egg",
   "item.arcamobs.desert_rain_frog_spawn_egg": "Desert Rain Frog Spawn Egg",

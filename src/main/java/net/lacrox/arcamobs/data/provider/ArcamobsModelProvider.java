@@ -34,6 +34,7 @@ public class ArcamobsModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+    itemModelGenerator.register(ModBlocks.COCONUT.asItem(), Models.GENERATED);
     itemModelGenerator.register(ModItems.COCONUT_HALF, Models.GENERATED);
     itemModelGenerator.register(ModBlocks.SNAIL_SHELL.asItem(), Models.GENERATED);
     itemModelGenerator.register(ModItems.SNAIL_IN_A_BOTTLE, Models.GENERATED);
@@ -56,11 +57,9 @@ public class ArcamobsModelProvider extends FabricModelProvider {
     itemModelGenerator.register(ModItems.COCONUT_CRAB_LEG, Models.GENERATED);
     itemModelGenerator.register(ModItems.COOKED_COCONUT_CRAB_LEG, Models.GENERATED);
     itemModelGenerator.register(ModItems.FIDDLER_CLAW, Models.HANDHELD);
-    itemModelGenerator.register(ModItems.BISON_MILK, Models.GENERATED);
     itemModelGenerator.register(ModItems.DUCK_EGG, Models.GENERATED);
     itemModelGenerator.register(ModBlocks.OSTRICH_EGG.asItem(), Models.GENERATED);
     itemModelGenerator.register(ModItems.TRUFFLE, Models.GENERATED);
-    itemModelGenerator.register(ModItems.YAK_MILK, Models.GENERATED);
     itemModelGenerator.register(ModItems.PIGEON_MAIL, Models.GENERATED);
     itemModelGenerator.register(ModItems.OWL_HARNESS, Models.GENERATED);
     itemModelGenerator.register(ModItems.ANTLER, Models.GENERATED);
@@ -70,9 +69,5 @@ public class ArcamobsModelProvider extends FabricModelProvider {
     itemModelGenerator.register(ModBlocks.SEASHELL.asItem(), Models.GENERATED);
     itemModelGenerator.register(ModItems.OSTRICH_FEATHER, Models.GENERATED);
     itemModelGenerator.register(ModBlocks.DUCKWEED.asItem(), Models.GENERATED);
-    itemModelGenerator.register(ModItems.OTTER_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
-    itemModelGenerator.register(ModItems.THORNY_DEVIL_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
-    itemModelGenerator.register(ModItems.DESERT_RAIN_FROG_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
-    itemModelGenerator.register(ModItems.BOAR_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
     }
 }

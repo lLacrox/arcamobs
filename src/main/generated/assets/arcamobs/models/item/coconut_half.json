@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "arcamobs:item/coconut_half"
+    "layer0": "arcamobs:item/coconut/coconut_half"
   }
 }
